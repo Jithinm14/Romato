@@ -99,6 +99,11 @@
 		5E5CB2B224BD95FE0032C3B1 /* Romato */ = {
 			isa = PBXGroup;
 			children = (
+				5E5CB2E724C049BA0032C3B1 /* Utilities */,
+				5E5CB2E624C049990032C3B1 /* WebServices */,
+				5E5CB2E524BDD85D0032C3B1 /* ViewModels */,
+				5E5CB2E424BDD8520032C3B1 /* Models */,
+				5E5CB2E324BDD8440032C3B1 /* CustomViews */,
 				5E5CB2B324BD95FE0032C3B1 /* AppDelegate.swift */,
 				5E5CB2B524BD95FE0032C3B1 /* SceneDelegate.swift */,
 				5E5CB2B724BD95FE0032C3B1 /* ContentView.swift */,
@@ -134,6 +139,41 @@
 				5E5CB2D724BD96010032C3B1 /* Info.plist */,
 			);
 			path = RomatoUITests;
+			sourceTree = "<group>";
+		};
+		5E5CB2E324BDD8440032C3B1 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		5E5CB2E424BDD8520032C3B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5E5CB2E524BDD85D0032C3B1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5E5CB2E624C049990032C3B1 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		5E5CB2E724C049BA0032C3B1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
