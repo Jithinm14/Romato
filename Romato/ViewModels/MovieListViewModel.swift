@@ -8,6 +8,7 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 enum DataCategory {
     case NowShowing
@@ -59,6 +60,43 @@ class MovieListViewModel : ObservableObject {
 }
 
 struct MovieViewModel {
+    
+    private var movie : Movie?
+    private let placeHolder = "Not available"
+    
+    var movieName : String {
+        return movie?.original_title ?? placeHolder
+    }
+    
+    var description : String {
+        return movie?.overview ?? placeHolder
+    }
+    
+    var genres : String {
+        //TODO : Return comma seperated genres after mapping with genre codes.
+        return placeHolder
+    }
+    
+    var releaseDate : String {
+        return movie?.release_date ?? placeHolder
+    }
+    
+    var language : String {
+        //TODO : Map language code to language strings
+        return movie?.original_language ?? placeHolder
+    }
+    
+    var rating : String {
+        return String("\(movie?.vote_count)")
+    }
+    
+    var isAdult : Bool {
+        return movie?.adult ?? false
+    }
+    
+    var posterImage : Image {
+        Image("")
+    }
     
     init(movie: Movie) {
         
