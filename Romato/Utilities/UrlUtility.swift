@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum WebService {
+enum WebService {
     
     case NowPlaying
     case Trending
