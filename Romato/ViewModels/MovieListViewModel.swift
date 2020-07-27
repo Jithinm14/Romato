@@ -59,10 +59,11 @@ class MovieListViewModel : ObservableObject {
     
 }
 
-struct MovieViewModel {
+struct MovieViewModel : Identifiable {
     
     private var movie : Movie?
-    private let placeHolder = "Not available"
+    private let placeHolder = "N/A"
+    let id = UUID()
     
     var movieName : String {
         return movie?.original_title ?? placeHolder
@@ -87,19 +88,25 @@ struct MovieViewModel {
     }
     
     var rating : String {
-        return String("\(movie?.vote_count)")
+        return String("\(movie?.vote_average)")
     }
     
     var isAdult : Bool {
         return movie?.adult ?? false
     }
     
-    var posterImage : Image {
-        Image("")
+    var posterImage : LazyImageView? {
+        return LazyImageView(imageUrl: UrlUtility.posterUrlForResource(resourcePath: movie!.poster_path))
     }
     
     init(movie: Movie) {
-        
+        self.movie = movie
     }
     
+}
+
+struct MovieListViewModel_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
 }

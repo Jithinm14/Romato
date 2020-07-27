@@ -19,3 +19,9 @@ struct Movie : Codable {
     var vote_count : Double
     var adult : Bool
 }
+
+struct Response : Codable {
+    
+    var results : [Movie]
+    
+}

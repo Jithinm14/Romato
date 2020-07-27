@@ -15,18 +15,12 @@ class ImageLoadService : ObservableObject {
     @Published var image : UIImage?
     var cancellable : AnyCancellable?
     
-    private var imageUrl : URL {
-        didSet {
-            load()
-        }
-    }
-    
     init(url: URL) {
-        self.imageUrl = url
+        load(imageFrom: url)
     }
     
-    func load() {
-        self.cancellable = URLSession.shared.dataTaskPublisher(for: self.imageUrl)
+    func load(imageFrom url: URL) {
+        self.cancellable = URLSession.shared.dataTaskPublisher(for: url)
             .map {
                 UIImage(data: $0.data)
             }

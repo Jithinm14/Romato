@@ -9,8 +9,13 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @ObservedObject var movieListModel = MovieListViewModel(category: .NowShowing)
+    
     var body: some View {
-        Image("homeTab")
+        List(self.movieListModel.movies, id: \.id) { movie in
+            MovieListRow(movie: movie)
+        }
     }
 }
 

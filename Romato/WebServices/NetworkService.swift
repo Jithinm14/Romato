@@ -28,7 +28,8 @@ class NetworkService {
             .map {
                 $0.data
             }
-            .decode(type: [Movie].self, decoder: JSONDecoder())
+            .decode(type: Response.self, decoder: JSONDecoder())
+            .map{ $0.results }
             .mapError({ error -> NetworkError in
                 switch error {
                 case URLError.notConnectedToInternet:
