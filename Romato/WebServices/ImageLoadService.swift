@@ -19,14 +19,20 @@ class ImageLoadService : ObservableObject {
         load(imageFrom: url)
     }
     
-    func load(imageFrom url: URL) {
-        self.cancellable = URLSession.shared.dataTaskPublisher(for: url)
-            .map {
-                UIImage(data: $0.data)
+    private func load(imageFrom url: URL) {
+        self.cancellable = URLSession.shared.downloadTaskPublisher(for: url).map{
+            return UIImage(contentsOfFile: $0.url.path)!
             }
-            .replaceError(with: nil)
-            .receive(on: RunLoop.main)
-            .assign(to: \.image, on: self)
+        .replaceError(with: UIImage(named: "placeholder"))
+        .receive(on: RunLoop.main)
+        .assign(to: \.image, on: self)
+//        self.cancellable = URLSession.shared.dataTaskPublisher(for: url)
+//            .map {
+//                UIImage(data: $0.data)
+//            }
+//            .replaceError(with: nil)
+//            .receive(on: RunLoop.main)
+//            .assign(to: \.image, on: self)
     }
     
     func cancel() {

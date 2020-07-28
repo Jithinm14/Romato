@@ -13,8 +13,10 @@ struct HomeView: View {
     @ObservedObject var movieListModel = MovieListViewModel(category: .NowShowing)
     
     var body: some View {
-        List(self.movieListModel.movies, id: \.id) { movie in
-            MovieListRow(movie: movie)
+        NavigationView {
+            List(self.movieListModel.movies, id: \.id) { movie in
+                MovieListRow(movie: movie)
+            }.navigationBarTitle("Now Playing")
         }
     }
 }

@@ -21,14 +21,10 @@ struct LazyImageView: View {
             if imageLoader.image != nil {
                 Image(uiImage: imageLoader.image!)
             } else {
-                Image(uiImage: LazyImageView.placeholder!)
+                RTActivityIndicator(animate: Binding<Bool>.constant(true))
             }
         }
     }
-}
-
-extension LazyImageView {
-    static let placeholder = UIImage(named: "placeholder")
 }
 
 struct LazyImageView_Previews: PreviewProvider {

@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		309DBEE2B634073172AFC037 /* Pods_Romato.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E657AA010F6B044BF42A86 /* Pods_Romato.framework */; };
+		51EF3370D1971FF950A90E01 /* Pods_Romato_RomatoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103B5CDBEB547C6E049424BF /* Pods_Romato_RomatoUITests.framework */; };
 		5E4F5F5124C4DD7500F4AC86 /* UrlUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4F5F5024C4DD7500F4AC86 /* UrlUtility.swift */; };
 		5E4F5F5324C4E73E00F4AC86 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4F5F5224C4E73E00F4AC86 /* NetworkService.swift */; };
 		5E4F5F5524C5775600F4AC86 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4F5F5424C5775600F4AC86 /* MovieModel.swift */; };
@@ -27,6 +29,10 @@
 		5E5CB2C024BD96010032C3B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5CB2BE24BD96010032C3B1 /* LaunchScreen.storyboard */; };
 		5E5CB2CB24BD96010032C3B1 /* RomatoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5CB2CA24BD96010032C3B1 /* RomatoTests.swift */; };
 		5E5CB2D624BD96010032C3B1 /* RomatoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5CB2D524BD96010032C3B1 /* RomatoUITests.swift */; };
+		5EE7BD3E24CEDB91009256A5 /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7BD3D24CEDB91009256A5 /* URLSession+Extension.swift */; };
+		5EE7BD4024CF062F009256A5 /* PosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7BD3F24CF062F009256A5 /* PosterImage.swift */; };
+		5EE7BD4924D0027D009256A5 /* RTActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7BD4824D0027D009256A5 /* RTActivityIndicatorView.swift */; };
+		C4223A8FA355E397B320ED98 /* Pods_RomatoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8289B8C83640B66FCFF4289C /* Pods_RomatoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		103B5CDBEB547C6E049424BF /* Pods_Romato_RomatoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Romato_RomatoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23827D11D72DD1891438B570 /* Pods-Romato.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Romato.debug.xcconfig"; path = "Target Support Files/Pods-Romato/Pods-Romato.debug.xcconfig"; sourceTree = "<group>"; };
+		444AC96D949C227DF1B6798A /* Pods-Romato-RomatoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Romato-RomatoUITests.release.xcconfig"; path = "Target Support Files/Pods-Romato-RomatoUITests/Pods-Romato-RomatoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5E4F5F5024C4DD7500F4AC86 /* UrlUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlUtility.swift; sourceTree = "<group>"; };
 		5E4F5F5224C4E73E00F4AC86 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		5E4F5F5424C5775600F4AC86 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
@@ -73,6 +82,15 @@
 		5E5CB2D124BD96010032C3B1 /* RomatoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomatoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5CB2D524BD96010032C3B1 /* RomatoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomatoUITests.swift; sourceTree = "<group>"; };
 		5E5CB2D724BD96010032C3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EE7BD3D24CEDB91009256A5 /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
+		5EE7BD3F24CF062F009256A5 /* PosterImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImage.swift; sourceTree = "<group>"; };
+		5EE7BD4824D0027D009256A5 /* RTActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTActivityIndicatorView.swift; sourceTree = "<group>"; };
+		8289B8C83640B66FCFF4289C /* Pods_RomatoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RomatoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E657AA010F6B044BF42A86 /* Pods_Romato.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Romato.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		876843B731930C002FEAB88F /* Pods-RomatoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RomatoTests.release.xcconfig"; path = "Target Support Files/Pods-RomatoTests/Pods-RomatoTests.release.xcconfig"; sourceTree = "<group>"; };
+		979C08D97CBCA50B5D13211D /* Pods-RomatoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RomatoTests.debug.xcconfig"; path = "Target Support Files/Pods-RomatoTests/Pods-RomatoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		98A0AAF42C197AF2E22DD9DE /* Pods-Romato-RomatoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Romato-RomatoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Romato-RomatoUITests/Pods-Romato-RomatoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A94AFDC6A1B348C4B44E04B6 /* Pods-Romato.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Romato.release.xcconfig"; path = "Target Support Files/Pods-Romato/Pods-Romato.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309DBEE2B634073172AFC037 /* Pods_Romato.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4223A8FA355E397B320ED98 /* Pods_RomatoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,12 +114,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51EF3370D1971FF950A90E01 /* Pods_Romato_RomatoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56F79D0CB1A76D45C27A735E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83E657AA010F6B044BF42A86 /* Pods_Romato.framework */,
+				103B5CDBEB547C6E049424BF /* Pods_Romato_RomatoUITests.framework */,
+				8289B8C83640B66FCFF4289C /* Pods_RomatoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5E5CB2A724BD95FE0032C3B1 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +138,8 @@
 				5E5CB2C924BD96010032C3B1 /* RomatoTests */,
 				5E5CB2D424BD96010032C3B1 /* RomatoUITests */,
 				5E5CB2B124BD95FE0032C3B1 /* Products */,
+				6519ED0019580B45415B57B9 /* Pods */,
+				56F79D0CB1A76D45C27A735E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +156,8 @@
 		5E5CB2B224BD95FE0032C3B1 /* Romato */ = {
 			isa = PBXGroup;
 			children = (
+				5EE7BD4724D0021A009256A5 /* Screens */,
+				5EE7BD3C24CEDB6B009256A5 /* Extensions */,
 				5E5CB2E724C049BA0032C3B1 /* Utilities */,
 				5E5CB2E624C049990032C3B1 /* WebServices */,
 				5E5CB2E524BDD85D0032C3B1 /* ViewModels */,
@@ -168,13 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				5E52FC6A24C18B3D0050A5B7 /* RTTabView.swift */,
-				5E52FC6C24C195080050A5B7 /* HomeView.swift */,
-				5E52FC6E24C195150050A5B7 /* SearchView.swift */,
-				5E52FC7024C195290050A5B7 /* WatchListView.swift */,
-				5E52FC7224C1953E0050A5B7 /* FavouritesListView.swift */,
-				5E52FC7424C195570050A5B7 /* SettingsView.swift */,
-				5E4F5F5624C70C3900F4AC86 /* MovieListRow.swift */,
 				5E4F5F5A24C84C2400F4AC86 /* LazyImageView.swift */,
+				5EE7BD4824D0027D009256A5 /* RTActivityIndicatorView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -208,8 +238,43 @@
 			isa = PBXGroup;
 			children = (
 				5E4F5F5024C4DD7500F4AC86 /* UrlUtility.swift */,
+				5EE7BD3F24CF062F009256A5 /* PosterImage.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5EE7BD3C24CEDB6B009256A5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5EE7BD3D24CEDB91009256A5 /* URLSession+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5EE7BD4724D0021A009256A5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5E52FC6C24C195080050A5B7 /* HomeView.swift */,
+				5E52FC6E24C195150050A5B7 /* SearchView.swift */,
+				5E52FC7024C195290050A5B7 /* WatchListView.swift */,
+				5E52FC7224C1953E0050A5B7 /* FavouritesListView.swift */,
+				5E52FC7424C195570050A5B7 /* SettingsView.swift */,
+				5E4F5F5624C70C3900F4AC86 /* MovieListRow.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6519ED0019580B45415B57B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23827D11D72DD1891438B570 /* Pods-Romato.debug.xcconfig */,
+				A94AFDC6A1B348C4B44E04B6 /* Pods-Romato.release.xcconfig */,
+				98A0AAF42C197AF2E22DD9DE /* Pods-Romato-RomatoUITests.debug.xcconfig */,
+				444AC96D949C227DF1B6798A /* Pods-Romato-RomatoUITests.release.xcconfig */,
+				979C08D97CBCA50B5D13211D /* Pods-RomatoTests.debug.xcconfig */,
+				876843B731930C002FEAB88F /* Pods-RomatoTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +284,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E5CB2DA24BD96010032C3B1 /* Build configuration list for PBXNativeTarget "Romato" */;
 			buildPhases = (
+				6BED792463B3339187908CD0 /* [CP] Check Pods Manifest.lock */,
 				5E5CB2AC24BD95FE0032C3B1 /* Sources */,
 				5E5CB2AD24BD95FE0032C3B1 /* Frameworks */,
 				5E5CB2AE24BD95FE0032C3B1 /* Resources */,
+				8A20D8169A40D3FE71712C98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +303,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E5CB2DD24BD96010032C3B1 /* Build configuration list for PBXNativeTarget "RomatoTests" */;
 			buildPhases = (
+				1338BA21428523F7D2AEDD8A /* [CP] Check Pods Manifest.lock */,
 				5E5CB2C224BD96010032C3B1 /* Sources */,
 				5E5CB2C324BD96010032C3B1 /* Frameworks */,
 				5E5CB2C424BD96010032C3B1 /* Resources */,
@@ -254,9 +322,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E5CB2E024BD96010032C3B1 /* Build configuration list for PBXNativeTarget "RomatoUITests" */;
 			buildPhases = (
+				57E66315165C38AAE37649D4 /* [CP] Check Pods Manifest.lock */,
 				5E5CB2CD24BD96010032C3B1 /* Sources */,
 				5E5CB2CE24BD96010032C3B1 /* Frameworks */,
 				5E5CB2CF24BD96010032C3B1 /* Resources */,
+				4C19FAC57385B056560F4C6D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,6 +408,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1338BA21428523F7D2AEDD8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RomatoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C19FAC57385B056560F4C6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Romato-RomatoUITests/Pods-Romato-RomatoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Romato-RomatoUITests/Pods-Romato-RomatoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Romato-RomatoUITests/Pods-Romato-RomatoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57E66315165C38AAE37649D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Romato-RomatoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BED792463B3339187908CD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Romato-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A20D8169A40D3FE71712C98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Romato/Pods-Romato-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Romato/Pods-Romato-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Romato/Pods-Romato-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E5CB2AC24BD95FE0032C3B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -347,10 +520,13 @@
 				5E4F5F5724C70C3900F4AC86 /* MovieListRow.swift in Sources */,
 				5E4F5F5324C4E73E00F4AC86 /* NetworkService.swift in Sources */,
 				5E5CB2B424BD95FE0032C3B1 /* AppDelegate.swift in Sources */,
+				5EE7BD3E24CEDB91009256A5 /* URLSession+Extension.swift in Sources */,
 				5E5CB2B624BD95FE0032C3B1 /* SceneDelegate.swift in Sources */,
 				5E4F5F5924C710EC00F4AC86 /* MovieListViewModel.swift in Sources */,
 				5E52FC7324C1953E0050A5B7 /* FavouritesListView.swift in Sources */,
 				5E52FC7524C195570050A5B7 /* SettingsView.swift in Sources */,
+				5EE7BD4024CF062F009256A5 /* PosterImage.swift in Sources */,
+				5EE7BD4924D0027D009256A5 /* RTActivityIndicatorView.swift in Sources */,
 				5E52FC7124C195290050A5B7 /* WatchListView.swift in Sources */,
 				5E4F5F5124C4DD7500F4AC86 /* UrlUtility.swift in Sources */,
 				5E52FC6B24C18B3D0050A5B7 /* RTTabView.swift in Sources */,
@@ -520,6 +696,7 @@
 		};
 		5E5CB2DB24BD96010032C3B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23827D11D72DD1891438B570 /* Pods-Romato.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +716,7 @@
 		};
 		5E5CB2DC24BD96010032C3B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A94AFDC6A1B348C4B44E04B6 /* Pods-Romato.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -558,6 +736,7 @@
 		};
 		5E5CB2DE24BD96010032C3B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 979C08D97CBCA50B5D13211D /* Pods-RomatoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -579,6 +758,7 @@
 		};
 		5E5CB2DF24BD96010032C3B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 876843B731930C002FEAB88F /* Pods-RomatoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -600,6 +780,7 @@
 		};
 		5E5CB2E124BD96010032C3B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98A0AAF42C197AF2E22DD9DE /* Pods-Romato-RomatoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -619,6 +800,7 @@
 		};
 		5E5CB2E224BD96010032C3B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 444AC96D949C227DF1B6798A /* Pods-Romato-RomatoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

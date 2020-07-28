@@ -22,7 +22,26 @@ enum DataCategory {
             return .Trending
         }
     }
+}
+
+enum Language : String {
+    case en
+    case ko
+    case fr
+    case es
     
+    var languageString : String {
+        switch self {
+        case .en:
+            return "English"
+        case .ko:
+            return "Korean"
+        case .fr:
+            return "French"
+        case .es:
+            return "Spanish"
+        }
+    }
 }
 
 class MovieListViewModel : ObservableObject {
@@ -79,24 +98,33 @@ struct MovieViewModel : Identifiable {
     }
     
     var releaseDate : String {
-        return movie?.release_date ?? placeHolder
+        let release = movie?.release_date ?? placeHolder
+        return String("Release : \(release)")
     }
     
     var language : String {
-        //TODO : Map language code to language strings
-        return movie?.original_language ?? placeHolder
+        guard let language = movie?.original_language, let languageString = (Language(rawValue: language)?.languageString) else {
+            return String("Language : \(placeHolder)")
+        }
+        return  String("Language : \(languageString)")
     }
     
     var rating : String {
-        return String("\(movie?.vote_average)")
+        guard let rating = movie?.vote_average else {
+            return "Rating : \(placeHolder)"
+        }
+        return "Rating : (\(rating)/10)"
     }
     
     var isAdult : Bool {
         return movie?.adult ?? false
     }
     
-    var posterImage : LazyImageView? {
-        return LazyImageView(imageUrl: UrlUtility.posterUrlForResource(resourcePath: movie!.poster_path))
+    var posterResource : String {
+        guard let posterResource = movie?.poster_path else {
+            return ""
+        }
+        return posterResource
     }
     
     init(movie: Movie) {
