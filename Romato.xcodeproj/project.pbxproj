@@ -30,6 +30,9 @@
 		5EE7BD3E24CEDB91009256A5 /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7BD3D24CEDB91009256A5 /* URLSession+Extension.swift */; };
 		5EE7BD4024CF062F009256A5 /* PosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7BD3F24CF062F009256A5 /* PosterImage.swift */; };
 		5EE7BD4924D0027D009256A5 /* RTActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7BD4824D0027D009256A5 /* RTActivityIndicatorView.swift */; };
+		741D40BF5437D23B478F8D5F /* Pods_RomatoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1FC5588C4CC8DDD02D0F5B /* Pods_RomatoTests.framework */; };
+		BFA2E327D749DD2E426D1D85 /* Pods_Romato.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F1CCAB8BCF9F172CD072E2 /* Pods_Romato.framework */; };
+		F6D58EC98467C1B3F788048E /* Pods_Romato_RomatoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4616CF75A7DF99E2137B4B6D /* Pods_Romato_RomatoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25EE694A440B80CE981CD1F7 /* Pods-Romato.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Romato.release.xcconfig"; path = "Target Support Files/Pods-Romato/Pods-Romato.release.xcconfig"; sourceTree = "<group>"; };
+		27F1CCAB8BCF9F172CD072E2 /* Pods_Romato.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Romato.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B752BA89A66C22CAF6BE08 /* Pods-RomatoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RomatoTests.release.xcconfig"; path = "Target Support Files/Pods-RomatoTests/Pods-RomatoTests.release.xcconfig"; sourceTree = "<group>"; };
+		4616CF75A7DF99E2137B4B6D /* Pods_Romato_RomatoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Romato_RomatoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A1FC5588C4CC8DDD02D0F5B /* Pods_RomatoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RomatoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4F5F5024C4DD7500F4AC86 /* UrlUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlUtility.swift; sourceTree = "<group>"; };
 		5E4F5F5224C4E73E00F4AC86 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		5E4F5F5424C5775600F4AC86 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
@@ -79,6 +87,10 @@
 		5EE7BD3D24CEDB91009256A5 /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
 		5EE7BD3F24CF062F009256A5 /* PosterImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImage.swift; sourceTree = "<group>"; };
 		5EE7BD4824D0027D009256A5 /* RTActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTActivityIndicatorView.swift; sourceTree = "<group>"; };
+		93758230FD834D69B0C0F44F /* Pods-Romato.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Romato.debug.xcconfig"; path = "Target Support Files/Pods-Romato/Pods-Romato.debug.xcconfig"; sourceTree = "<group>"; };
+		CA2E04F9BD394CFD989521FC /* Pods-RomatoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RomatoTests.debug.xcconfig"; path = "Target Support Files/Pods-RomatoTests/Pods-RomatoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D0516CDCA7E22E63CFFFC97B /* Pods-Romato-RomatoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Romato-RomatoUITests.release.xcconfig"; path = "Target Support Files/Pods-Romato-RomatoUITests/Pods-Romato-RomatoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E399E69B9839BCC2201E657E /* Pods-Romato-RomatoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Romato-RomatoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Romato-RomatoUITests/Pods-Romato-RomatoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA2E327D749DD2E426D1D85 /* Pods_Romato.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				741D40BF5437D23B478F8D5F /* Pods_RomatoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6D58EC98467C1B3F788048E /* Pods_Romato_RomatoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +128,8 @@
 				5E5CB2C924BD96010032C3B1 /* RomatoTests */,
 				5E5CB2D424BD96010032C3B1 /* RomatoUITests */,
 				5E5CB2B124BD95FE0032C3B1 /* Products */,
+				6B920CC859781AEDEE000CDF /* Pods */,
+				CA76F2EAA37538670F4835AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,6 +252,30 @@
 				5E4F5F5624C70C3900F4AC86 /* MovieListRow.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		6B920CC859781AEDEE000CDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93758230FD834D69B0C0F44F /* Pods-Romato.debug.xcconfig */,
+				25EE694A440B80CE981CD1F7 /* Pods-Romato.release.xcconfig */,
+				E399E69B9839BCC2201E657E /* Pods-Romato-RomatoUITests.debug.xcconfig */,
+				D0516CDCA7E22E63CFFFC97B /* Pods-Romato-RomatoUITests.release.xcconfig */,
+				CA2E04F9BD394CFD989521FC /* Pods-RomatoTests.debug.xcconfig */,
+				43B752BA89A66C22CAF6BE08 /* Pods-RomatoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA76F2EAA37538670F4835AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27F1CCAB8BCF9F172CD072E2 /* Pods_Romato.framework */,
+				4616CF75A7DF99E2137B4B6D /* Pods_Romato_RomatoUITests.framework */,
+				4A1FC5588C4CC8DDD02D0F5B /* Pods_RomatoTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,8 +490,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "
-";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8A20D8169A40D3FE71712C98 /* [CP] Embed Pods Frameworks */ = {
@@ -459,14 +499,15 @@
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Romato/Pods-Romato-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Romato/Pods-Romato-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "
-";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Romato/Pods-Romato-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -656,6 +697,7 @@
 		};
 		5E5CB2DB24BD96010032C3B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93758230FD834D69B0C0F44F /* Pods-Romato.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -675,6 +717,7 @@
 		};
 		5E5CB2DC24BD96010032C3B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25EE694A440B80CE981CD1F7 /* Pods-Romato.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -694,6 +737,7 @@
 		};
 		5E5CB2DE24BD96010032C3B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA2E04F9BD394CFD989521FC /* Pods-RomatoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -715,6 +759,7 @@
 		};
 		5E5CB2DF24BD96010032C3B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43B752BA89A66C22CAF6BE08 /* Pods-RomatoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -736,6 +781,7 @@
 		};
 		5E5CB2E124BD96010032C3B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E399E69B9839BCC2201E657E /* Pods-Romato-RomatoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -755,6 +801,7 @@
 		};
 		5E5CB2E224BD96010032C3B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0516CDCA7E22E63CFFFC97B /* Pods-Romato-RomatoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
