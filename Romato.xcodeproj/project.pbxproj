@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E0F718024D415E900BB64DF /* RealmDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0F717F24D415E900BB64DF /* RealmDataManager.swift */; };
+		5E0F718224D4A2C600BB64DF /* CoreDataPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0F718124D4A2C600BB64DF /* CoreDataPublisher.swift */; };
 		5E4F5F5124C4DD7500F4AC86 /* UrlUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4F5F5024C4DD7500F4AC86 /* UrlUtility.swift */; };
 		5E4F5F5324C4E73E00F4AC86 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4F5F5224C4E73E00F4AC86 /* NetworkService.swift */; };
 		5E4F5F5524C5775600F4AC86 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4F5F5424C5775600F4AC86 /* MovieModel.swift */; };
@@ -58,6 +60,8 @@
 		43B752BA89A66C22CAF6BE08 /* Pods-RomatoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RomatoTests.release.xcconfig"; path = "Target Support Files/Pods-RomatoTests/Pods-RomatoTests.release.xcconfig"; sourceTree = "<group>"; };
 		4616CF75A7DF99E2137B4B6D /* Pods_Romato_RomatoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Romato_RomatoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1FC5588C4CC8DDD02D0F5B /* Pods_RomatoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RomatoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E0F717F24D415E900BB64DF /* RealmDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataManager.swift; sourceTree = "<group>"; };
+		5E0F718124D4A2C600BB64DF /* CoreDataPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPublisher.swift; sourceTree = "<group>"; };
 		5E4F5F5024C4DD7500F4AC86 /* UrlUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlUtility.swift; sourceTree = "<group>"; };
 		5E4F5F5224C4E73E00F4AC86 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		5E4F5F5424C5775600F4AC86 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
@@ -121,6 +125,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E0F717E24D413B000BB64DF /* DataCaching */ = {
+			isa = PBXGroup;
+			children = (
+				5E0F717F24D415E900BB64DF /* RealmDataManager.swift */,
+				5E0F718124D4A2C600BB64DF /* CoreDataPublisher.swift */,
+			);
+			path = DataCaching;
+			sourceTree = "<group>";
+		};
 		5E5CB2A724BD95FE0032C3B1 = {
 			isa = PBXGroup;
 			children = (
@@ -146,13 +159,14 @@
 		5E5CB2B224BD95FE0032C3B1 /* Romato */ = {
 			isa = PBXGroup;
 			children = (
-				5EE7BD4724D0021A009256A5 /* Screens */,
-				5EE7BD3C24CEDB6B009256A5 /* Extensions */,
-				5E5CB2E724C049BA0032C3B1 /* Utilities */,
-				5E5CB2E624C049990032C3B1 /* WebServices */,
-				5E5CB2E524BDD85D0032C3B1 /* ViewModels */,
-				5E5CB2E424BDD8520032C3B1 /* Models */,
 				5E5CB2E324BDD8440032C3B1 /* CustomViews */,
+				5E0F717E24D413B000BB64DF /* DataCaching */,
+				5EE7BD3C24CEDB6B009256A5 /* Extensions */,
+				5E5CB2E424BDD8520032C3B1 /* Models */,
+				5EE7BD4724D0021A009256A5 /* Screens */,
+				5E5CB2E724C049BA0032C3B1 /* Utilities */,
+				5E5CB2E524BDD85D0032C3B1 /* ViewModels */,
+				5E5CB2E624C049990032C3B1 /* WebServices */,
 				5E5CB2B324BD95FE0032C3B1 /* AppDelegate.swift */,
 				5E5CB2B524BD95FE0032C3B1 /* SceneDelegate.swift */,
 				5E5CB2B924BD96010032C3B1 /* Assets.xcassets */,
@@ -264,7 +278,6 @@
 				CA2E04F9BD394CFD989521FC /* Pods-RomatoTests.debug.xcconfig */,
 				43B752BA89A66C22CAF6BE08 /* Pods-RomatoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -528,6 +541,7 @@
 				5E52FC7524C195570050A5B7 /* SettingsView.swift in Sources */,
 				5EE7BD4024CF062F009256A5 /* PosterImage.swift in Sources */,
 				5EE7BD4924D0027D009256A5 /* RTActivityIndicatorView.swift in Sources */,
+				5E0F718224D4A2C600BB64DF /* CoreDataPublisher.swift in Sources */,
 				5E52FC7124C195290050A5B7 /* WatchListView.swift in Sources */,
 				5E4F5F5124C4DD7500F4AC86 /* UrlUtility.swift in Sources */,
 				5E52FC6B24C18B3D0050A5B7 /* RTTabView.swift in Sources */,
@@ -535,6 +549,7 @@
 				5E4F5F5B24C84C2400F4AC86 /* LazyImageView.swift in Sources */,
 				5E4F5F5D24C8504300F4AC86 /* ImageLoadService.swift in Sources */,
 				5E52FC6F24C195150050A5B7 /* SearchView.swift in Sources */,
+				5E0F718024D415E900BB64DF /* RealmDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
