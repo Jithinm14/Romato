@@ -21,7 +21,7 @@ class ImageLoadService : ObservableObject {
     
     private func load(imageFrom url: URL) {
         self.cancellable = URLSession.shared.downloadTaskPublisher(for: url).map{
-            return UIImage(contentsOfFile: $0.url.path)!
+            return UIImage(contentsOfFile: $0.url.path)
             }
         .replaceError(with: UIImage(named: "placeholder"))
         .receive(on: RunLoop.main)
