@@ -10,16 +10,16 @@ import SwiftUI
 
 struct LazyImageView: View {
     
-    @ObservedObject private var imageLoader : ImageLoadService
+    @ObservedObject var moviePoster : MoviePosterViewModel
     
-    init(imageUrl: URL) {
-        imageLoader = ImageLoadService(url: imageUrl)
+    init(imageModel: MoviePosterModel) {
+        self.moviePoster = MoviePosterViewModel(movie: imageModel)
     }
     
     var body: some View {
         Group {
-            if imageLoader.image != nil {
-                Image(uiImage: imageLoader.image!)
+            if moviePoster.image != nil {
+                Image(uiImage: moviePoster.image!)
             } else {
                 RTActivityIndicator(animate: Binding<Bool>.constant(true))
             }
@@ -29,6 +29,6 @@ struct LazyImageView: View {
 
 struct LazyImageView_Previews: PreviewProvider {
     static var previews: some View {
-        LazyImageView(imageUrl: URL(string: "https://picsum.photos/200/300")!)
+        LazyImageView(imageModel: MoviePosterModel(posterUrl: URL(string: "https://picsum.photos/200/300")!, resourceName: nil))
     }
 }

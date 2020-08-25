@@ -57,6 +57,38 @@ final class UrlUtility {
         return url
     }
     
+    static func downloadedPathFor(resource: String?) -> URL? {
+        guard let resource = resource else {
+            return nil
+        }
+        let cacheDir = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
+        return cacheDir.appendingPathComponent(resource)
+    }
+    
+    static func doesFileExist(fileName: String) -> Bool {
+        let path = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)[0] as String
+        let url = NSURL(fileURLWithPath: path)
+        if let pathComponent = url.appendingPathComponent(fileName) {
+            let filePath = pathComponent.path
+            let fileManager = FileManager.default
+            if fileManager.fileExists(atPath: filePath) {
+                return true
+            } else {
+                return false
+            }
+        } else {
+            return false
+        }
+    }
+    
+    static func fileNameFrom(resourcePath: String) -> String {
+        let components = resourcePath.components(separatedBy: "/")
+        guard let fileName = components.last else {
+        return (UUID().uuidString)
+        }
+        return fileName
+    }
+    
     private static func addQueryParameters(url: String, params: [(String,String)]?) -> String {
         var completeUrl = addApiKeyAsQueryParameter(url: url)
         guard let parameters = params else {

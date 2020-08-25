@@ -77,14 +77,8 @@ extension URLSession {
                     return
                 }
                 do {
-                    let cacheDir = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
-                    let fileUrl = cacheDir.appendingPathComponent((UUID().uuidString))
-                    try FileManager.default.moveItem(atPath: url.path, toPath: fileUrl.path)
-                    _ = self?.subscriber?.receive((url: fileUrl, response: response))
+                    _ = self?.subscriber?.receive((url: url, response: response))
                     self?.subscriber?.receive(completion: .finished)
-                }
-                catch {
-                    self?.subscriber?.receive(completion: .failure(URLError(.cannotCreateFile)))
                 }
             }
             self.task.resume()

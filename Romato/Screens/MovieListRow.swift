@@ -18,7 +18,7 @@ struct MovieListRow: View {
     
     var body: some View {
         HStack {
-            LazyImageView(imageUrl: UrlUtility.posterUrlForResource(resourcePath: movie.posterResource)).frame(width: 185, height: 278)
+            LazyImageView(imageModel: movie.posterResource).frame(width: 185, height: 278)
             VStack(alignment: .leading) {
                 Text(movie.movieName).font(.title).multilineTextAlignment(.leading)
                 Spacer().frame(height: 10)

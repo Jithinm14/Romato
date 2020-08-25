@@ -120,11 +120,11 @@ struct MovieViewModel : Identifiable {
         return movie?.adult ?? false
     }
     
-    var posterResource : String {
+    var posterResource : MoviePosterModel {
         guard let posterResource = movie?.poster_path else {
-            return ""
+            return MoviePosterModel(posterUrl: nil, resourceName: nil)
         }
-        return posterResource
+        return MoviePosterModel(posterUrl: UrlUtility.posterUrlForResource(resourcePath: posterResource), resourceName: UrlUtility.fileNameFrom(resourcePath: posterResource))
     }
     
     init(movie: Movie) {
